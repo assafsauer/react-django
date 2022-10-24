@@ -8,8 +8,8 @@ spec:
     image: gcr.io/kaniko-project/executor:latest
     args:
     - "--context=git://github.com/assafsauer/react-django.git#refs/heads/main"
-    - "--context-sub-path=src/react"
-    - "--destination=asauer/react:1.2"
+    - "--context-sub-path=react"
+    - "--destination=asauer/react:latest"
     volumeMounts:
     - name: kaniko-secret
       mountPath: /kaniko/.docker
