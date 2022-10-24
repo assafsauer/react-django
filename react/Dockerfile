@@ -1,10 +1,10 @@
-FROM python:3.6
+FROM node:14.16.1-alpine
 
-COPY requirements.txt ./app/todolist/
-WORKDIR /app/todolist/
+COPY package*.json /app/react-todolist/react-todolist/
+WORKDIR /app/react-todolist/react-todolist/
 
-RUN pip install -r requirements.txt
+RUN npm install && npm audit fix
 
-COPY . /app/todolist/
+COPY . /app/react-todolist/react-todolist/
 
-EXPOSE 8000
+EXPOSE 3000
