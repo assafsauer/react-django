@@ -18,7 +18,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: asauer:react:latest
+      - image: asauer/react:latest
         name: react-todolist
         env:
           - name: REACT_APP_HOST
