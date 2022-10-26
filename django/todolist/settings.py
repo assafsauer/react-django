@@ -88,8 +88,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'todolist',
         'USER': 'root',
-        'HOST': 'localhost',
+        'HOST': 'nslookup mysql-service.react.svc.cluster.local',
         'PORT': '3306',
+        'PASSWORD': 'mysql123',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         }
