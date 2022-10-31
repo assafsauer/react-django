@@ -27,7 +27,7 @@ SECRET_KEY = 's6+7cx9re$4f=6)^qcsotirb1axdgokp$pei1l*)e05($@^i-9'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CORS_ORIGIN_ALLOW_ALL=True
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -88,7 +88,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'todolist',
         'USER': 'root',
-        'HOST': 'nslookup mysql-service.react.svc.cluster.local',
+        'HOST': 'mysql-service.react.svc.cluster.local',
         'PORT': '3306',
         'PASSWORD': 'mysql123',
         'OPTIONS': {
